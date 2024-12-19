@@ -19,9 +19,6 @@ from langchain_core.prompts import load_prompt
 # API key불러오기
 load_dotenv()
 
-# 프로젝트 이름을 입력
-logging.langsmith("ubyn_final_test")
-
 # 캐시 디렉토리 생성
 if not os.path.exists(".cache"):
     os.mkdir(".cache")  # . 은 숨김폴더처리
