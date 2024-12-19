@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_core.messages.chat import ChatMessage
 from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
-from langchain_teddynote.prompts import load_prompt
+from langchain_core.prompts import load_prompt
 from dotenv import load_dotenv
 import os
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -11,8 +11,10 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from langchain_teddynote import logging
+
+# from langchain_teddynote import logging
 from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import load_prompt
 
 # API key불러오기
 load_dotenv()
